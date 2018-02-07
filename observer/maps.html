@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8" />
+
+<!-- Reference to the Bing Maps SDK -->
+<script type='text/javascript'
+src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap'
+async defer></script>
+
+<script type='text/javascript'>
+function GetMap()
+{
+
+ //Request the user's location
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var loc = new Microsoft.Maps.Location(
+                position.coords.latitude,
+                position.coords.longitude);
+ 
+            //Add a pushpin at the user's location.
+            var pin = new Microsoft.Maps.Pushpin(loc);
+            map.entities.push(pin);
+ 
+            //Center the map on the user's location.
+            map.setView({ center: loc, zoom: 17 });
+        });
+		
+var map = new Microsoft.Maps.Map('#myMap', {
+    credentials: 'Aq5jGcHUP4_LIphkWpDhzxs9x8YcqbC8gIIBpbyTKvEvEhIi-a4nxNxOJ-iZCsF0',
+    center: new Microsoft.Maps.Location(40.730610, -73.935242),
+    mapTypeId: Microsoft.Maps.MapTypeId.road,
+    zoom: 15
+});
+
+	   //Request the user's location
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var loc = new Microsoft.Maps.Location(
+                position.coords.latitude,
+                position.coords.longitude);
+ 
+            //Add a pushpin at the user's location.
+            var pin = new Microsoft.Maps.Pushpin(loc);
+            map.entities.push(pin);
+ 
+            //Center the map on the user's location.
+            map.setView({ center: loc, zoom: 17 });
+        });
+
+//Add your post map load code here.
+infobox = new Microsoft.Maps.Infobox(map.getCenter(), {
+            visible: false
+        });
+		//Assign the infobox to a map instance.
+        infobox.setMap(map);
+
+        //Create random locations in the map bounds.
+        var randomLocations = Microsoft.Maps.TestDataGenerator.getLocations(5, map.getBounds());
+        
+        for (var i = 0; i < randomLocations.length; i++) {
+            var pin = new Microsoft.Maps.Pushpin(randomLocations[i]);
+
+            //Store some metadata with the pushpin.
+            pin.metadata = {
+                title: 'DropBox ' + i,
+                description: 'Location ' + i
+            };
+			//Add a click event handler to the pushpin.
+            Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
+
+            //Add pushpin to the map.
+            map.entities.push(pin);			
+			}
+			
+}
+ function pushpinClicked(e) {
+        //Make sure the infobox has metadata to display.
+        if (e.target.metadata) {
+            //Set the infobox options with the metadata of the pushpin.
+            infobox.setOptions({
+                location: e.target.getLocation(),
+                title: e.target.metadata.title,
+                description: e.target.metadata.description,
+                visible: true
+            });
+        }
+    }
+</script>
+</head>
+<body onload="GetMap();">
+<div id="myMap" ></div>
+</body>
+</html>
