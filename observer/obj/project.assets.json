@@ -3675,6 +3675,19 @@
           }
         }
       },
+      "System.Net.Http.Formatting.Extension/5.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/System.Net.Http.Extensions.dll": {},
+          "lib/System.Net.Http.Formatting.dll": {},
+          "lib/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/System.Net.Http.Extensions.dll": {},
+          "lib/System.Net.Http.Formatting.dll": {},
+          "lib/System.Net.Http.Primitives.dll": {}
+        }
+      },
       "System.Net.NameResolution/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -9732,6 +9745,18 @@
         "system.net.http.nuspec"
       ]
     },
+    "System.Net.Http.Formatting.Extension/5.2.3": {
+      "sha512": "BlYwj3Mbgc2i+NqtBZ+bea3LiN9WuGpE8PCylBvhxV0wBs0XTkXJmDuzkNnUyPhDBqKMBwDK0ZCnwJ8LpQ0aEg==",
+      "type": "package",
+      "path": "system.net.http.formatting.extension/5.2.3",
+      "files": [
+        "lib/System.Net.Http.Extensions.dll",
+        "lib/System.Net.Http.Formatting.dll",
+        "lib/System.Net.Http.Primitives.dll",
+        "system.net.http.formatting.extension.5.2.3.nupkg.sha512",
+        "system.net.http.formatting.extension.nuspec"
+      ]
+    },
     "System.Net.NameResolution/4.3.0": {
       "sha512": "AFYl08R7MrsrEjqpQWTZWBadqXyTzNDaWpMqyxhb0d6sGhV6xMDKueuBXlLL30gz+DIRY6MpdgnHWlCh5wmq9w==",
       "type": "package",
@@ -12531,7 +12556,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.5",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "System.Net.Http.Formatting.Extension >= 5.2.3"
     ]
   },
   "packageFolders": {
@@ -12544,11 +12570,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\TonyIgnatius\\Documents\\UPS\\Generic Documents\\RFP\\FPR101459 - G&A UPS Observer (Drop Box Audit) Innovation POC\\App\\observer\\observer\\observer.csproj",
+      "projectUniqueName": "C:\\Users\\TonyIgnatius\\Documents\\UPS\\Generic Documents\\RFP\\FPR101459 - G&A UPS Observer Innovation POC\\App\\observer\\observer\\observer.csproj",
       "projectName": "observer",
-      "projectPath": "C:\\Users\\TonyIgnatius\\Documents\\UPS\\Generic Documents\\RFP\\FPR101459 - G&A UPS Observer (Drop Box Audit) Innovation POC\\App\\observer\\observer\\observer.csproj",
+      "projectPath": "C:\\Users\\TonyIgnatius\\Documents\\UPS\\Generic Documents\\RFP\\FPR101459 - G&A UPS Observer Innovation POC\\App\\observer\\observer\\observer.csproj",
       "packagesPath": "C:\\Users\\TonyIgnatius\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TonyIgnatius\\Documents\\UPS\\Generic Documents\\RFP\\FPR101459 - G&A UPS Observer (Drop Box Audit) Innovation POC\\App\\observer\\observer\\obj\\",
+      "outputPath": "C:\\Users\\TonyIgnatius\\Documents\\UPS\\Generic Documents\\RFP\\FPR101459 - G&A UPS Observer Innovation POC\\App\\observer\\observer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12583,6 +12609,10 @@
             "version": "2.0",
             "autoReferenced": true
           },
+          "System.Net.Http.Formatting.Extension": {
+            "target": "Package",
+            "version": "5.2.3"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "2.0.5"
@@ -12595,5 +12625,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Net.Http.Formatting.Extension 5.2.3' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Net.Http.Formatting.Extension",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

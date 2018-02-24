@@ -9,3 +9,14 @@ C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Ob
 C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer (Drop Box Audit) Innovation POC\App\observer\observer\obj\Debug\netcoreapp2.0\observer.AssemblyInfo.cs
 C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer (Drop Box Audit) Innovation POC\App\observer\observer\obj\Debug\netcoreapp2.0\observer.dll
 C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer (Drop Box Audit) Innovation POC\App\observer\observer\obj\Debug\netcoreapp2.0\observer.pdb
+C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer Innovation POC\App\observer\observer\bin\Debug\netcoreapp2.0\observer.deps.json
+C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer Innovation POC\App\observer\observer\bin\Debug\netcoreapp2.0\observer.runtimeconfig.json
+C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer Innovation POC\App\observer\observer\bin\Debug\netcoreapp2.0\observer.runtimeconfig.dev.json
+C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer Innovation POC\App\observer\observer\bin\Debug\netcoreapp2.0\observer.dll
+C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer Innovation POC\App\observer\observer\bin\Debug\netcoreapp2.0\observer.pdb
+C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer Innovation POC\App\observer\observer\obj\Debug\netcoreapp2.0\observer.csprojResolveAssemblyReference.cache
+C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer Innovation POC\App\observer\observer\obj\Debug\netcoreapp2.0\observer.csproj.CoreCompileInputs.cache
+C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer Innovation POC\App\observer\observer\obj\Debug\netcoreapp2.0\observer.AssemblyInfoInputs.cache
+C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer Innovation POC\App\observer\observer\obj\Debug\netcoreapp2.0\observer.AssemblyInfo.cs
+C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer Innovation POC\App\observer\observer\obj\Debug\netcoreapp2.0\observer.dll
+C:\Users\TonyIgnatius\Documents\UPS\Generic Documents\RFP\FPR101459 - G&A UPS Observer Innovation POC\App\observer\observer\obj\Debug\netcoreapp2.0\observer.pdb
