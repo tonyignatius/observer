@@ -30,7 +30,7 @@ namespace observer.Controllers
                 client.UseDefaultCredentials = true;
                 client.EnableSsl = true;
                 client.Port = 587;
-                //client.Credentials = new NetworkCredential("tonyignatius@live.com", "tripplehorn#1");
+            
                 MailMessage mailmessage = new MailMessage();
                 mailmessage.From = new MailAddress("donotreply@ups.com");
                 mailmessage.To.Add("cyberhero.tony@gmail.com");
